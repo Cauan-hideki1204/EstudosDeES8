@@ -1,0 +1,47 @@
+<html>
+    <body>
+
+        <script>
+
+        let objetoTest = {
+            nome: 'Cauan Hideki Fumoto',
+            profissao: 'Desenvolvedor Front-end',
+            hobbies: [
+                { id: 1, hobby: 'Fazer Esporte' },
+                { id: 2, hobby: 'Pescar' },
+            ],
+            pais: 'Brasil',
+            estado: 'Parana',
+            cidade: 'Sarandi'
+        }
+
+        console.log(objetoTest);
+        
+          // Retorno sem o object Values :
+          //   cidade: "Sarandi"
+          //   estado: "Parana"
+          //   hobbies: (2) [{…}, {…}]
+          //   nome: "Cauan Hideki Fumoto"
+          //   pais: "Brasil"
+          //   profissao: "Desenvolvedor Front-end"
+          //   [[Prototype]]: Object
+
+
+        console.log(Object.values(objetoTest));
+
+        // O object.values(obj) ele transforma o objeto em array,
+        // Fazendo com que cada propriedade do objeto vire um indice do array
+        // Sendo assim o novo retono ficaria :
+        // 0: 'Sarandi',
+        // 1: 'Parana',  
+        // 2: (2) [{...}. {...}]  
+        // 3: 'Cauan Hideki Fumoto' 
+        // 4: 'Brasil'  
+        // 5: 'Desenvolvedor Front-end'  
+
+        // OBS => vale resaltar que o object.values só é suportado no chrome e no firefox
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+            let objetoTest = {
+            nome: 'Cauan Hideki Fumoto',
+            profissao: 'Desenvolvedor Front-end',
+            hobbies: [
+                { id: 1, hobby: 'Fazer Esporte' },
+                { id: 2, hobby: 'Pescar' },
+            ],
+            pais: 'Brasil',
+            estado: 'Parana',
+            cidade: 'Sarandi'
+        }
+
+        console.log(objetoTest);
+        
+          // Retorno sem o object Values :
+          //   cidade: "Sarandi"
+          //   estado: "Parana"
+          //   hobbies: (2) [{…}, {…}]
+          //   nome: "Cauan Hideki Fumoto"
+          //   pais: "Brasil"
+          //   profissao: "Desenvolvedor Front-end"
+          //   [[Prototype]]: Object
+
+
+        console.log(Object.entries(objetoTest));
+
+        // O object.entries(obj) ele transforma o objeto em array,
+        // Fazendo com que cada propriedade do objeto vire um indice do array
+        // Porem diferente do object.values, agora teremos uma combinação de chave e valor
+        // Sendo assim o novo retono ficaria :
+        // 0: (2) ['nome', 'Cauan Hideki Fumoto']
+        // 1: (2) ['profissao', 'Desenvolvedor Front-end']
+        // 2: (2) ['hobbies', Array(2)]
+        // 3: (2) ['pais', 'Brasil']
+        // 4: (2) ['estado', 'Parana']
+        // 5: (2) ['cidade', 'Sarandi']
+
+        // OBS => vale resaltar que o object.entries não tem suporte no internet explore
+
+        </script>
+    </body>
+</html>
